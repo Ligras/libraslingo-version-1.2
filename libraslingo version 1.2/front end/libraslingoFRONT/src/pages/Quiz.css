@@ -1,0 +1,43 @@
+*{margin: 0; padding: 0;}
+#main{
+    display: grid;
+    grid-template-rows: repeat(4, 200px); 
+    grid-template-columns: 1fr; 
+}
+#div1{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+.grid-container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+#mensagem{
+    margin: auto;
+}
+#div3{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+}
+.opcao{
+    width: 100px;
+    height: 100px;
+}
+#btnVoltar{
+    margin: 30px 30px;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    cursor: pointer;
+    background-color: rgb(0, 255, 255);
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 3px;
+}

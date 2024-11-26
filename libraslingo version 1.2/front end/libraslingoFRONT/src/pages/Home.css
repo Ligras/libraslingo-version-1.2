@@ -1,0 +1,48 @@
+*{margin: 0; padding: 0;}
+
+#img1{
+    width: 200px;
+    height: 200px;
+}
+
+.btn-cad{
+    width: 100px;
+    height: 50px;
+    font-size: medium;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(182, 182, 182);
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 3px;
+}
+
+.btn-jogar{
+    width: 200px;
+    height: 100px;
+    font-size: large;
+    cursor: pointer;
+    background-color: gray;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: aqua;
+}
+.Home{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 80px;
+    column-gap: 150px;
+}
+header{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    column-gap: normal;
+    row-gap: 20px;
+}
+main{
+    margin: 100px
+}
+
