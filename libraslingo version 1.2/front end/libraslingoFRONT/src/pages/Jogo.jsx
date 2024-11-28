@@ -36,8 +36,6 @@ function Jogo() {
           <button onClick={paginaIndisponivel}>praticar</button>
         </div>
       </main>
-      <footer>
-      </footer>
     </div>
   );
 }

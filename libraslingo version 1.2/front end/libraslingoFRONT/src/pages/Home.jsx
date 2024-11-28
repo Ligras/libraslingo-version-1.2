@@ -28,8 +28,6 @@ function Home() {
           <button className="btn-jogar">JOGAR</button>
         </Link>
       </main>
-      <footer>
-      </footer>
     </div>
   );
 }

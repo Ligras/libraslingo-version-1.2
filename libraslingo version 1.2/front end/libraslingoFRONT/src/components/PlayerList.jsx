@@ -1,17 +1,20 @@
 import React from 'react';
-import { useAPI } from '../context/APIContext';
 import PlayerItem from './PlayerItem';
 
-function PlayerList() {
-  const jogadores = useAPI();
-
+function PlayerList({ jogadores, onDelete }) {
   return (
     <ul>
-      {jogadores.map((jogador, index) => (
-        <PlayerItem key={index} nome={jogador.nome} pontuacao={jogador.pontuacao} />
+      {jogadores.map((jogador) => (
+        <PlayerItem 
+          key={jogador.id} 
+          id={jogador.id}
+          nome={jogador.apelido} 
+          pontuacao={jogador.pontuacaoRanking} 
+          onDelete={onDelete}
+        />
       ))}
     </ul>
   );
-};
+}
 
 export default PlayerList;

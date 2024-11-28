@@ -1,14 +1,55 @@
-.Ranking{
-    margin: auto auto;
+.Ranking {
     text-align: center;
-}
-#btnVoltar{
-    margin-bottom:40px;
-    width: 100px;
-    height: 50px;
-    font-size: large;
+    padding: 20px;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  #btnVoltar {
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(0, 255, 255);
-    box-shadow: 1px 1px 1px 1px;
+    font-size: 1rem;
+  }
+  
+  #btnVoltar:hover {
+    background-color: #5a52e5;
+  }
+  
+  main h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  .btn-delete {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
     border-radius: 3px;
-}
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-delete:hover {
+    background-color: darkred;
+  }
+  
+  

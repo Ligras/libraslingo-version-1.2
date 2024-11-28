@@ -92,7 +92,7 @@ function CadastroUsuario() {
         </div>
         {tipo === "Jogador" && (
           <div>
-            <label htmlFor="pontuacaoRanking">Pontuação Inicial:</label>
+            <label htmlFor="pontuacaoRanking">Pontuação:</label>
             <input
               type="number"
               id="pontuacaoRanking"
