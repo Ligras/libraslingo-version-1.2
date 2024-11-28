@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import './Cadastro.css';
+
 
 function CadastroUsuario() {
+  const navigate = useNavigate();
   const [apelido, setApelido] = useState("");
   const [senha, setSenha] = useState("");
   const [tipo, setTipo] = useState("Jogador"); // Tipo de usuário (Jogador ou Administrador)
@@ -32,6 +36,10 @@ function CadastroUsuario() {
         if (res.ok) {
           console.log(`${tipo} cadastrado com sucesso!`);
           alert(`${tipo} cadastrado com sucesso!`); // Alerta de sucesso
+
+          // Após o cadastro, redireciona para a página Home
+          localStorage.setItem('cadastroConcluido', 'true'); // Marca no localStorage que o cadastro foi concluído
+          navigate('/'); // Redireciona para a página Home
         } else {
           console.error(`Erro ao cadastrar ${tipo.toLowerCase()}.`);
           alert(`Erro ao cadastrar ${tipo.toLowerCase()}.`); // Alerta de erro
@@ -101,4 +109,3 @@ function CadastroUsuario() {
 }
 
 export default CadastroUsuario;
-

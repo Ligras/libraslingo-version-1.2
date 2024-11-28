@@ -1,43 +1,104 @@
 .Jogo {
-    text-align: center;
-  }
-  
-  header {
-    padding: 20px;
+  text-align: center;
+  background-color: #f4f4f9; /* Cor de fundo suave */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px;
+  background-color: #fff; /* Fundo branco para o cabeçalho */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombras sutis para destacar o cabeçalho */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#btn-voltar {
+  width: 120px;
+  height: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #6c63ff; /* Cor de fundo roxa */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btn-voltar:hover {
+  background-color: #5a52e5; /* Cor de hover */
+  transform: scale(1.05); /* Leve aumento de tamanho no hover */
+}
+
+button {
+  width: 180px;
+  height: 80px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #6c63ff; /* Cor de fundo roxa */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #5a52e5; /* Cor de hover */
+  transform: scale(1.05); /* Leve aumento de tamanho no hover */
+}
+
+.button2 {
+  background-color: #f0f0f0; /* Cor de fundo para o botão secundário */
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.button2:hover {
+  background-color: #e0e0e0; /* Cor de hover */
+  transform: scale(1.05); /* Leve aumento de tamanho no hover */
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Três colunas de igual largura */
+  grid-gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-items: center; /* Centraliza os itens dentro das células */
+}
+
+footer {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombras sutis no rodapé */
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
   }
 
-  #btn-voltar{
-    width: 100px;
-    height: 50px;
-    font-size: medium;
-    cursor: pointer;
-    background-color: gray;
-    box-shadow: 1px 1px 1px 1px;
-    border-radius: 3px;
+  button {
+    width: 150px;
+    height: 70px;
   }
-  
-  button{
-    width: 200px;
-    height: 100px;
-    font-size: medium;
-    cursor: pointer;
-    background-color: gray;
-    box-shadow: 1px 1px 1px 1px;
-    border-radius: 3px;
-  }
-  
-  .button2 {
-    background-color: #f0f0f0;
-  }
-  
+}
+
+@media (max-width: 480px) {
   main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
+    grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
   }
-  
-  footer {
-    padding: 20px;
+
+  button {
+    width: 120px;
+    height: 60px;
   }
+}

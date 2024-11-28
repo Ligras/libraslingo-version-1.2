@@ -1,78 +1,108 @@
+/* Corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  h1 {
-    color: #333;
-    text-align: center;
-    font-size: 2rem;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Título */
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Estilo do formulário */
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilo dos campos de formulário (divs internas) */
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo das labels */
+label {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Estilo dos campos de entrada */
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo quando o campo de entrada está em foco */
+input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+/* Estilo do botão */
+button {
+  padding: 12px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+/* Efeito hover do botão */
+button:hover {
+  background-color: #5a52e5;
+  transform: scale(1.05);
+}
+
+/* Efeito de foco no botão */
+button:focus {
+  outline: none;
+}
+
+/* Responsividade para dispositivos menores (máximo de 600px) */
+@media (max-width: 600px) {
+  /* Ajuste de largura do formulário e padding */
   form {
-    background-color: white;
+    width: 90%;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
   }
-  
-  form div {
-    display: flex;
-    flex-direction: column;
+
+  /* Tamanho do título em telas pequenas */
+  h1 {
+    font-size: 1.8rem;
   }
-  
-  label {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    outline: none;
-  }
-  
-  input:focus {
-    border-color: #6c63ff;
-    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
-  }
-  
+
+  /* Ajustes nos campos de entrada e botão */
+  input,
   button {
-    padding: 10px;
-    background-color: #6c63ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    padding: 10px;
   }
-  
-  button:hover {
-    background-color: #5a52e5;
-  }
-  
-  @media (max-width: 600px) {
-    form {
-      width: 90%;
-      padding: 15px;
-    }
-  
-    h1 {
-      font-size: 1.5rem;
-    }
-  }
-  
+}
